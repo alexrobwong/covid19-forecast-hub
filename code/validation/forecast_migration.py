@@ -11,11 +11,12 @@ def remove_cols_2(df):
     Migration function to extract only the specified columns in teh DataFrame
     """
     cols_to_keep = [
-
         'location',
         'target',
         'type',
         'quantile',
+        'forecast_date',
+        'target_end_date',
         'value'
     ]
     return df.loc[:, cols_to_keep]
